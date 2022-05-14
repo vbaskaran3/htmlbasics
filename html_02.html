@@ -1,3 +1,107 @@
-<html>
-    <h1>My second file</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Table of Students</h1>
+    
+
+    <div>
+        <form> <!-- html form-->
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+            </div>
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName">
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label>Password:</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label>Notes:</label>
+                <textarea name="notes" id="notes" rows = "5" cols="20"></textarea>
+            </div>
+            <div>
+                <label>Are you vaccinated?</label>
+                
+                <input type="radio" id="vaacination_yes" name="vaccination" value="Yes">
+                <label for="vaacination_yes">Yes</label>
+                <input type="radio" id="vaacination_no" name="vaccination" value="No">
+                <label for="vaacination_no">No</label>
+                <input type="radio" id="vaacination_donotknow" name="vaccination" value="dontknow">
+                <label for="vaacination_donotknow">I don't know</label>
+            </div>
+            <div>
+                <label>Hobbies:</label>
+                <input type="checkbox" id="sports" name="sports">
+                <label for="vaacination_yes">Sports</label>
+                <input type="checkbox" id="reading" name="reading">
+                <label for="vaacination_yes">Reading</label>
+                <input type="checkbox" id="Adventure" name="Adventure">
+                <label for="vaacination_yes">Adventure</label>
+
+            </div>
+            <div>
+                <label>Country: </label>
+                <select name="country" id="country">
+                    <option value="US">USA</option>
+                    <option value="IN">India</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="JP">Japan</option>
+                    <option value="CA">Canada</option>
+                </select>
+            </div>
+            <div>
+                <label for="ppCopy">Your Passport copy:</label>
+                <input type="file" name="ppCopy" id="ppCopy">
+            </div>
+        </form>
+    </div>
+<br><br><br><br><br><br><br><br>
+
+
+
+    <table> <!-- html table-->
+        <tr> <!-- table row-->
+            <th>First Name</th> <!-- header-->
+            <th>Last Name</th> <!-- header-->
+            <th>Age</th> <!-- header-->
+            <th>Email Address</th> <!-- header-->
+            <th>Hobbies</th> <!-- header-->
+            <th>Home Address</th> <!-- header-->
+        </tr>
+        <tbody> <!-- table body-->
+            <tr> <!-- table row-->
+                <td>Adam</td> <!-- table cell-->
+                <td>Smith</td>
+                <td></td>
+                <td>adam@test.com</td>
+                <td>Sports, Reading</td>
+                <td>123 Main St, San Jose CA</td>
+            </tr>
+            <tr> <!-- table row-->
+                <td>Eve</td> <!-- table cell-->
+                <td>Smith</td>
+                <td>20</td>
+                <td>eve@test.com</td>
+                <td>Sports</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
 </html>
